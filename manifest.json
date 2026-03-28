@@ -1,0 +1,16 @@
+{
+  "name": "GTKOAN - God's Throne Kingdom",
+  "short_name": "GTKOAN",
+  "description": "Reforming Minds, Lives, and Nations.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#00143c",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "background.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}
