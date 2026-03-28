@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God’s Throne Kingdom of All Nations | GTKOAN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #00143c; /* Deep Royal Blue */
+            --accent: #D4AF37;  /* Kingdom Gold */
+            --white: #ffffff;
+            --light-grey: #f4f7f6;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--white);
+        }
+
+        /* --- HERO SECTION WITH YOUR BACKGROUND --- */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            /* Make sure your file is still named background.jpeg */
+            background: linear-gradient(rgba(0, 20, 60, 0.75), rgba(0, 0, 0, 0.75)), 
+                        url('background.jpeg') no-repeat center center/cover;
+            background-attachment: fixed;
+        }
+
+        .hero-content {
+            z-index: 2;
+            padding: 20px;
+            max-width: 900px;
+        }
+
+        .motto-top {
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: var(--accent);
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            line-height: 1.1;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .abbr {
+            font-size: 2rem;
+            color: var(--accent);
+            letter-spacing: 8px;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .btn-main {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--primary);
+            padding: 18px 40px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 4px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .btn-main:hover {
+            background-color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        /* --- INFO SECTION --- */
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 80px 10%;
+            background-color: var(--light-grey);
+            margin-top: -50px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid var(--accent);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- VISION SECTION --- */
+        .vision {
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        .vision h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .vision p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 60px 10% 20px;
+            text-align: center;
+        }
+
+        .footer-motto {
+            color: var(--accent);
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .footer-links a:hover { opacity: 1; color: var(--accent); }
+
+        .copyright {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .info-cards { margin-top: 0; padding: 40px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <p class="motto-top">Reforming Minds • Lives • Nations</p>
+            <h1>God’s Throne Kingdom of All Nations</h1>
+            <span class="abbr">[GTKOAN]</span>
+            <a href="#about" class="btn-main">Join Our Fellowship</a>
+        </div>
+    </header>
+
+    <section class="info-cards">
+        <div class="card">
+            <h3>Service Times</h3>
+            <p><strong>Sunday Worship:</strong><br> 8:00 AM — 4:00 PM</p>
+            <p style="margin-top: 10px; color: var(--accent); font-weight: 600;">Saturday Counselling:</p>
+            <p>Available - Contact for Hours</p>
+        </div>
+        
+        <div class="card">
+            <h3>Our Location</h3>
+            <p>Douala, Bonaberi</p>
+            <p>Littoral Region, Cameroon</p>
+            <p><em>Reforming the World from Africa</em></p>
+        </div>
+
+        <div class="card">
+            <h3>Connect With Us</h3>
+            <p><strong>Cell:</strong> +237 671 774 193</p>
+            <p><strong>Email:</strong><br>chafahmarkchosen@gmail.com</p>
+        </div>
+    </section>
+
+    <section id="about" class="vision">
+        <h2>Our Kingdom Mission</h2>
+        <p>
+            At God’s Throne Kingdom of All Nations, we are dedicated to the total reformation of the human spirit. Through the power of the Word, we seek to reform minds, transform lives, and impact nations to bring God's kingdom here on earth.
+        </p>
+    </section>
+
+    <footer>
+        <p class="footer-motto">REFORMING MINDS • REFORMING LIVES • REFORMING NATIONS • REFORMING THE WORLD</p>
+        
+        <div class="footer-links">
+            <a href="tel:+237671774193">Call Us</a>
+            <a href="mailto:chafahmarkchosen@gmail.com">Email Pastor</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 God’s Throne Kingdom of All Nations [GTKOAN]. <br>
+            Douala Bonaberi, Cameroon.
+        </p>
+    </footer>
+
+</body>
+</html>
