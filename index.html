@@ -8,8 +8,8 @@
     
     <style>
         :root {
-            --primary: #00143c; /* Deep Royal Blue */
-            --accent: #D4AF37;  /* Kingdom Gold */
+            --primary: #00143c; 
+            --accent: #D4AF37;  
             --white: #ffffff;
             --light-grey: #f4f7f6;
         }
@@ -24,7 +24,7 @@
             background-color: var(--white);
         }
 
-        /* --- HERO SECTION WITH YOUR BACKGROUND --- */
+        /* --- HERO SECTION --- */
         .hero {
             position: relative;
             height: 100vh;
@@ -33,7 +33,7 @@
             justify-content: center;
             text-align: center;
             color: var(--white);
-            /* Make sure your file is still named background.jpeg */
+            /* CRITICAL: The filename here must match exactly what you upload to GitHub */
             background: linear-gradient(rgba(0, 20, 60, 0.75), rgba(0, 0, 0, 0.75)), 
                         url('background.jpeg') no-repeat center center/cover;
             background-attachment: fixed;
@@ -82,11 +82,6 @@
             transition: 0.3s;
         }
 
-        .btn-main:hover {
-            background-color: var(--white);
-            transform: translateY(-3px);
-        }
-
         /* --- INFO SECTION --- */
         .info-cards {
             display: grid;
@@ -112,30 +107,8 @@
             color: var(--primary);
             margin-bottom: 15px;
             text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
-        /* --- VISION SECTION --- */
-        .vision {
-            padding: 100px 10%;
-            text-align: center;
-        }
-
-        .vision h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 20px;
-        }
-
-        .vision p {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.1rem;
-            color: #666;
-        }
-
-        /* --- FOOTER --- */
         footer {
             background: var(--primary);
             color: white;
@@ -147,26 +120,8 @@
             color: var(--accent);
             margin-bottom: 20px;
             font-weight: 600;
-            font-size: 0.9rem;
         }
 
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        .footer-links a:hover { opacity: 1; color: var(--accent); }
-
-        .copyright {
-            margin-top: 40px;
-            font-size: 0.8rem;
-            opacity: 0.5;
-        }
-
-        /* Responsive Fixes */
         @media (max-width: 768px) {
             h1 { font-size: 2.2rem; }
             .info-cards { margin-top: 0; padding: 40px 5%; }
@@ -180,7 +135,7 @@
             <p class="motto-top">Reforming Minds • Lives • Nations</p>
             <h1>God’s Throne Kingdom of All Nations</h1>
             <span class="abbr">[GTKOAN]</span>
-            <a href="#about" class="btn-main">Join Our Fellowship</a>
+            <a href="tel:+237671774193" class="btn-main">Contact Us</a>
         </div>
     </header>
 
@@ -196,35 +151,18 @@
             <h3>Our Location</h3>
             <p>Douala, Bonaberi</p>
             <p>Littoral Region, Cameroon</p>
-            <p><em>Reforming the World from Africa</em></p>
         </div>
 
         <div class="card">
-            <h3>Connect With Us</h3>
+            <h3>Direct Contact</h3>
             <p><strong>Cell:</strong> +237 671 774 193</p>
             <p><strong>Email:</strong><br>chafahmarkchosen@gmail.com</p>
         </div>
     </section>
 
-    <section id="about" class="vision">
-        <h2>Our Kingdom Mission</h2>
-        <p>
-            At God’s Throne Kingdom of All Nations, we are dedicated to the total reformation of the human spirit. Through the power of the Word, we seek to reform minds, transform lives, and impact nations to bring God's kingdom here on earth.
-        </p>
-    </section>
-
     <footer>
         <p class="footer-motto">REFORMING MINDS • REFORMING LIVES • REFORMING NATIONS • REFORMING THE WORLD</p>
-        
-        <div class="footer-links">
-            <a href="tel:+237671774193">Call Us</a>
-            <a href="mailto:chafahmarkchosen@gmail.com">Email Pastor</a>
-        </div>
-
-        <p class="copyright">
-            &copy; 2026 God’s Throne Kingdom of All Nations [GTKOAN]. <br>
-            Douala Bonaberi, Cameroon.
-        </p>
+        <p>&copy; 2026 God’s Throne Kingdom of All Nations [GTKOAN].</p>
     </footer>
 
 </body>
